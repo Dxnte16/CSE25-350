@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Verdana, sans-serif;
+    color: #111;
+    background-color: #fff;
+}
+
+/* navigation */
+.navbar {
+    background-color: #000;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.navbar-brand {
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    color: white;
+    margin-left: 15px;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+/* slideshow */
+.slideshow {
+    position: relative;
+    background-color: #000;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active-slide {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.slide-text h1 {
+    font-size: 52px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.slide-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    background-color: #000;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 13px;
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
+
+/* sections */
+.section-title {
+    text-align: center;
+    margin: 42px 0 25px 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.about-text {
+    line-height: 1.7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* buttons */
+.black-btn {
+    background-color: #000;
+    color: white;
+    border-radius: 20px;
+    padding: 9px 18px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #000;
+}
+
+.black-btn:hover {
+    color: #000;
+    background-color: white;
+    border: 1px solid #000;
+}
+
+/* product cards */
+.shop-menu {
+    border-right: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.shop-menu h2 {
+    font-size: 20px;
+}
+
+.shop-menu ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.shop-menu a {
+    color: #111;
+    text-decoration: none;
+    line-height: 2.2;
+}
+
+.shop-menu a:hover {
+    border-bottom: 1px solid #111;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+
+.product-card:hover,
+.gallery-box:hover {
+    border-color: #000;
+}
+
+.product-card img,
+.gallery-box img,
+.about-img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    background-color: white;
+    padding: 10px;
+}
+
+.product-card h2,
+.product-card h3 {
+    font-size: 20px;
+}
+
+.product-card p {
+    font-weight: bold;
+}
+
+/* gallery */
+.gallery-box {
+    border: 1px solid #ddd;
+    padding: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.gallery-box figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* forms */
+form {
+    max-width: 650px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* footer */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 45px;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+/* mobile screens */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 28px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    .slide img {
+        height: 320px;
+    }
+
+    .slide-text h1 {
+        font-size: 36px;
+    }
+
+    .slide-text p {
+        font-size: 16px;
+    }
+
+    .slide-btn {
+        padding: 6px 10px;
+    }
+
+    .section-title {
+        margin-top: 28px;
+    }
+
+    .product-card img,
+    .gallery-box img,
+    .about-img {
+        height: 210px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .shop-menu {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 20px;
+    }
+}
